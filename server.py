@@ -85,8 +85,8 @@ def init_engine() -> Kokoro:
 
     cuda_opts = {
         "device_id": "0",
-        "arena_extend_strategy": "kNextPowerOfTwo",
-        "gpu_mem_limit": str(1024 * 1024 * 1024),  # Strict 1GB VRAM budget
+        "arena_extend_strategy": "kSameAsRequested",
+        "gpu_mem_limit": str(750 * 1024 * 1024),  # Capped at 750MB (~780MB total VRAM)
         "cudnn_conv_algo_search": "DEFAULT",
         "do_copy_in_default_stream": "1",
     }
