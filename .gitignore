@@ -1,0 +1,16 @@
+# Python & Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv
+.venv/
+
+# Large Model weights & audio artifacts
+*.onnx
+*.bin
+*.wav
+
+# Editor & OS
+.DS_Store
+.directory
+*.swp
